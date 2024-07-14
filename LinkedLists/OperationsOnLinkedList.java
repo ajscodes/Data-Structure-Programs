@@ -1,3 +1,17 @@
+/*
+ * Basic Operations on linkedlist:
+ * 1. INSERT NODE AT FIRST POSITION.
+ * 2. INSERT NODE AT LAST POSITION.
+ * 3. DELETE NODE FROM FIRST POSITION.
+ * 4. DELETE NODE FROM LAST POSITION.
+ * 5. DISPLAY LINKED LIST.
+ * 6. SIZE OF LINKED LIST.
+ * 7. EXIT THE PROCESS.
+ * 
+ * Author: Ayush Maradia
+ * Date: 07-07-24
+*/
+
 import java.util.Scanner;
 
 public class OperationsOnLinkedList {
