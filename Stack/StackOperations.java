@@ -31,33 +31,49 @@ class Stack{
     } 
 
     public void peep(int i){
-        if(i<s.length){
-            if (top - i + 1 <= -1) {
-                System.out.println("Stack underflow!");
-    
-            } else {
-                System.out.println("Element at position "+i+" is: "+ s[top - i + 1]);   
-            }
+        if(top == -1){
+            System.out.println("Empty Stack, can't view ith element.");
         }
         else{
-            System.out.println("Please enter valid index.");
-        }
+            if(i<s.length){
+                if (top - i + 1 <= -1) { //s.length <= i-1
+                    System.out.println("Stack underflow!");
         
+                }
+                else if(top - i < 0){
+                    System.out.println("Index out of bound.");
+                }
+                else {
+                    System.out.println("Element at position "+i+" from top is: "+ s[top - i]);   
+                }
+            }
+        }
     }
 
     public void change(int j,int y){
-        if(top - j + 1 <= -1){
-            System.out.println("Stack underflow, can't change!");
+        if(top == -1){
+            System.out.println("Stack is empty, can't change.");
+            return;
         }
         else{
-            s[top - j + 1] = y;
-            System.out.println("The new element at position "+j+ " is: "+y);
+            if(j<s.length){
+                if (top - j + 1 <= -1) { 
+                    System.out.println("Stack underflow!");
+        
+                }
+                else if(top - j < 0){
+                    System.out.println("Index out of bound.");
+                }
+                else {
+                    s[top-j] = y; 
+                }
+            }
         }
     }
 
     public void display() {
         if (top == -1) {
-            System.out.println("Stack Underflow!");
+            System.out.println("Empty Stack!");
         }
         else{
             // System.out.println("Stack elements are: ");
@@ -87,6 +103,7 @@ public class StackOperations {
             System.out.println("5. DISPLAY");
             System.out.println("6. EXIT");
             System.out.print("CURRENT STACK: ");
+            System.out.println();
             s.display();
             System.out.print("\n");
             // System.out.println();

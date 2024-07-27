@@ -129,6 +129,7 @@ public class OperationsOnLinkedList {
         Scanner op = new Scanner(System.in);
         OperationsOnLinkedList list = new OperationsOnLinkedList(); //make list of linked list
 
+
         System.out.println("----------\"This is Menu Driven Program of Linked List\"----------");
         System.out.println("1. INSERT NODE AT FIRST POSITION.");
         System.out.println("2. INSERT NODE AT LAST POSITION.");
