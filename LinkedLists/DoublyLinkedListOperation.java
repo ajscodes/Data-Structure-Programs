@@ -146,7 +146,7 @@ public class DoublyLinkedListOperation {
             }
             else{
                 before.rptr = joiner.rptr; //bypass node which you want to delete
-                joiner.lptr.rptr = before; // backward linkage
+                joiner.rptr.lptr = before; // backward linkage
             }
 
             System.out.println("Deleted successfully");
