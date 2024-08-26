@@ -8,6 +8,7 @@ public class LinearSearch {
         int size = op.nextInt();
 
         int n [] = new int[size];
+        
         System.err.println("Enter elements of array: ");
         for(int i=0; i<size; i++){
             System.out.print("n["+i+"] = ");
