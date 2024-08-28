@@ -22,6 +22,7 @@ public class BinarySearch {
         int left = 0;
         int right = n.length - 1;
         Arrays.sort(n);
+        
         boolean found = false;
         
         while (left <= right) {
